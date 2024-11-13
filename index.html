@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="blue-grey lighten-4">
+  <nav class="deep-purple accent-2" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Bitácora</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#frameworks">Frameworks</a></li>
+        <li><a href="#ur">Uninades Responsivas</a></li>
+        <li><a href="#mf">Mobile First</a></li>
+        <li><a href="#grid">Grid</a></li>
+        <li><a href="#supports">@supports</a></li>
+        <li><a href="#calc">calc</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#frameworks">Frameworks</a></li>
+        <li><a href="#ur">Uninades Responsivas</a></li>
+        <li><a href="#mf">Mobile First</a></li>
+        <li><a href="#grid">Grid</a></li>
+        <li><a href="#supports">@supports</a></li>
+        <li><a href="#calc">calc</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center purple-text text-lighten-1">Bitácora III</h1>
+      <div class="row center">
+        <h5 class="header col s12 black-text">Ultima bitácora del semestre</h5>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center purple-text text-lighten-1"><i class="material-icons" id="framworks">aspect_ratio</i></h2>
+            <h5 class="center" >Frameworks</h5>
+
+            <p class="regular black-text">Un <b>framework</b> CSS es un conjunto de herramientas open source con hojas de estilos y buenas prácticas de diseño, que permiten al desarrollador web generar entornos UI dinámicos, escalables y adaptables a las necesidades del usuario. <br> También permite olvidarse de las tareas repetitivas y centrarse en los elementos únicos de cada diseño que puede aportar valor a un sistema determinado.​</p>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center purple-text text-lighten-1"><i class="material-icons" id="ur">transform</i></h2>
+            <h5 class="center" >Unidades Responsivas</h5>
+
+            <p class="regular black-text"><b>Unidades absolutas:</b> Las unidades absolutas, como px, cm e in, representan tamaños fijos y no cambian independientemente del contexto en el que se utilicen. <br><br>
+              <b>Unidades relativas:</b> Las unidades relativas como %, em y rem, son flexibles y se adaptan en función a otros elementos. Por ejemplo, % es relativo al tamaño del contenedor padre, em es relativo al tamaño de fuente de elemento padre, y rem es relativo al tamaño de fuente del elemento raiz. <br><br>
+              <b>Unidades de vista de ventana: </b>Las unidades de vista de ventana son herramientas que se ajustan dinamicamente al tamaño de la ventana grafica del navegador. <br>
+              Las unidades de vista de ventana son: <br>
+              <ul>
+                <li class="black-text">• vw</li>
+                <li class="black-text">• vh</li>
+                <li class="black-text">• vmin</li>
+                <li class="black-text">• vmax</li>
+              </ul>
+            </p>
+            <p class="regular black-text" >
+              <b>vw y vh:</b><br>
+               El <b>vw</b> significa viewport width y representa un porcentaje del ancho de la ventana, donde 1vw es igual al 1% del ancho total de la ventana. <br>
+               El <b>vh</b> significa viewport height y representa un porcentaje de la altura de la ventana, donde 1vh es igual al 1% de la altura total de la ventana. <br>
+               <b>vmin y vmax</b><br>
+               <b>vmin y vmax</b> toman el valor minimo y maximo entre el ancho y la altura de la ventana, respectivamente, lo que permite una adaptabilidad aun mayor en situaciones donde la orientacion de la pantalla puede variar. <br><br>
+            </p>
+            <p class="regular black-text">
+              <b>Unidades Dinamicas de Vista de Ventana</b><br>
+              Las unidades dinamicas ofrecen mayor precision en el diseño responsivo porque toman en cuenta las variaciones de tamaño de la ventana grafica en dispositivos moviles. <br>
+              Las unidades dinamicas de vista de venatana son: <br>
+              <ul>
+                <li class="black-text">• dvh</li>
+                <li class="black-text">• svh</li>
+                <li class="black-text">• lvh</li>
+              </ul>
+            </p>
+            <p class="regular black-text">
+              <b>dvh</b><br>
+              La unidad <b>dvh</b> significa dynamic viewport height y representa el 1% de la altura de la ventana grafica, ajustandose en tiempo real a los cambios en la interfaz de usuario, como la aparicion o desaparicion de barras de navegación. <br>
+              <b>svh</b><br>
+              El <b>svh</b> significa small viewport height y corresponde al 1% de la altura de la ventana grafica más pequeña que el navegador ha registrado, proporcionando un valor estable que evista cambios bruscos en el layout. <br>
+              <b>lvh</b><br>
+              <b>lvh</b> Large Viewport Height por su parte, se refiere al 1% de la altura de la ventana grafica más grande registrada, permitiendo diseñar para el maximo espacio disponible sin que se vea afectado por cambios temporales en el viewport.
+            </p>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center purple-text text-lighten-1"><i class="material-icons" id="mf">phone_android</i></h2>
+            <h5 class="center" >Mobile First</h5>
+
+            <p class="regular black-text">
+              El modelo <b>Mobile First</b> es una filosofia que perfecciona el proceso de diseño de cualquier sitio web, buscando mejorar el diseño web adaptable. Esta nueva forma de diseñar, surge de los dispositivos moviles y de cualquier pantalla de tamaño menor en la que se parte de una escala en aumento hasta adaptar el diseño a pantallas de gran tamaño. <br>
+              Teniendo en cuenta este enfoque de diseño, las dimensiones y capacidades de un movil y la información que debemos incluir, podemos pasar al desarrollo de una pagina web. <br>
+              Lo primero que se debe hacer es aclarar el contenido basico y separarlo del contenido sobrante o prescindible. <br>
+              <b>Proceso</b><br>
+              Cuando la etapa de diseño para un dispositivo de tamaño reducido esta listo, el siguiente paso es estirar la ventana hasta que el diseño empiece a deformarse o a verse mal. En este momento se deben definir los media queries para pantallas de mayor dimensión.
+            </p>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center purple-text text-lighten-1"><i class="material-icons" id="grid">apps</i></h2>
+            <h5 class="center" >Grid</h5>
+
+            <p class="regular black-text">
+              <b>Grid</b> es un sistema de diseño bidimensional basado en cuadriculas que, en comparación con cualquier sistema de diseño web del pasado, cambia por completo la forma en que diseñamos las interfaces de usuario. <br>
+              <b>display: grid;</b><br>
+              Para comenzar, se debe definir un elemento contenedor como una cuadricula con: <b>display: grid;</b>. <br>
+              Todos los hijos directos del contenedor de la cuadricula se convierten automaticamente en elementos grid. <br>
+              <b>Grid column</b> <br>
+              Las lineas verticales de elementos grid son llamadas columnas <br>
+              <b>Grid rows</b><br>
+              Las lineas horizontales de elementos grid son llamados rows <br>
+              <b>column-gap</b><br>
+              Los espacios entre las columnas se pueden ajustar con la propiedad column-gap <br>
+              <b>row-gap</b><br>
+              Los espacios entre los rows se pueden ajustar con la propiedad row-gap <br>
+              <b>fr</b><br>
+              fr es una unidad de medida de CSS grid. <br>
+              Es la abreviatura de fracción y se utiliza para especificar fracciones del espacio disponible en una cuadricula CSS. <br>
+              <b>grid-template-areas</b><br>
+              El grid-template-areas es una propiedad de CSS grid que permite definir un esquema de cuadricula utilizando nombres de areas personalizadas en lugar de especificar las lineas de la cuadricula con grid-template-rows y grid-template-columns. <br>
+              <b>grid-column-start - grid-column-end</b><br>
+              Determina la bicacion de un elemento de la cuadricula dentro de la cuadricula haciendo referencia a lineas de cuadricula especifica.
+            </p>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center purple-text text-lighten-1"><i class="material-icons" id="supports">devices</i></h2>
+            <h5 class="center" >@supports</h5>
+
+            <p class="regular black-text">
+              La regla <b>@supports</b> en CSS permite detectar si el navegador soporta una caracteristica CSS especifica y aplicar estilos condicionales basados en esta compatibilidad. <br>
+              Esto es util para implementar funcionalidades modernas mientras se garantiza que los navegadores que no soportan estas caracteristicas aun presenten un diseño funcional. <br>
+              La estructura basica de @supports es la siguiente: <br>
+              @supports (propiedad: valor){ <br>
+                elemento { <br>
+                  propiedad: valor; <br>
+                } <br>
+              } <br>
+              La regla @supports puede utilizar los siguientes operadores logicos:
+              <ul>
+                <li class="black-text">• and</li>
+                <li class="black-text">• or</li>
+                <li class="black-text">• not</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <br><br>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center purple-text text-lighten-1"><i class="material-icons" id="calc">visibility_off</i></h2>
+            <h5 class="center" >Calc</h5>
+
+            <p class="light center">
+              <img class="responsive-img" src="calc.jpg">
+            </p>
+          </div>
+        </div>
+      
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer deep-purple accent-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Bitácora 3</h5>
+        </div>
+        <div class="col l3 s12">
+          <ul>
+            <li><a class="white-text" href="#frameworks">Frameworks</a></li>
+            <li><a class="white-text" href="#ur">Unidades Responsivas</a></li>
+            <li><a class="white-text" href="#mf">Mobila First</a></li>
+            <li><a class="white-text" href="#grid">Grid</a></li>
+            <li><a class="white-text" href="#supports">@supports</a></li>
+            <li><a class="white-text" href="#calc">Calc</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
